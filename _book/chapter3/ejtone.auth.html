@@ -1,0 +1,1172 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ejt权限代码过程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="codeStyle.html" />
+    
+    
+    <link rel="prev" href="AOP.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于ejt1项目简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/tool.html">
+            
+                <a href="../chapter1/tool.html">
+            
+                    
+                    工具类使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/入门前端必备知识技能及学习网站.html">
+            
+                <a href="../chapter1/入门前端必备知识技能及学习网站.html">
+            
+                    
+                    入门前端必备知识技能及学习网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/新机器配置环境文档.html">
+            
+                <a href="../chapter1/新机器配置环境文档.html">
+            
+                    
+                    新机器配置环境文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/git使用.html">
+            
+                <a href="../chapter1/git使用.html">
+            
+                    
+                    git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/gulp自动化构建项目过程.html">
+            
+                <a href="../chapter1/gulp自动化构建项目过程.html">
+            
+                    
+                    gulp自动化构建项目过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/bower的使用.html">
+            
+                <a href="../chapter1/bower的使用.html">
+            
+                    
+                    bower的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter1/gitbook的使用.html">
+            
+                <a href="../chapter1/gitbook的使用.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../chapter1/wikimd的用法.html">
+            
+                <a href="../chapter1/wikimd的用法.html">
+            
+                    
+                    wikimd的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../chapter1/swagger使用-v1.0.html">
+            
+                <a href="../chapter1/swagger使用-v1.0.html">
+            
+                    
+                    swagger使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../chapter1/jhipster的使用.html">
+            
+                <a href="../chapter1/jhipster的使用.html">
+            
+                    
+                    jhipster的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../chapter1/Yeoman.html">
+            
+                <a href="../chapter1/Yeoman.html">
+            
+                    
+                    Yeoman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../chapter1/webpack.html">
+            
+                <a href="../chapter1/webpack.html">
+            
+                    
+                    webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../chapter1/requirejs的应用.html">
+            
+                <a href="../chapter1/requirejs的应用.html">
+            
+                    
+                    requirejs的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    组件类使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/ocLazyLoad.html">
+            
+                <a href="../chapter2/ocLazyLoad.html">
+            
+                    
+                    ocLazyLoad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/font-awesome.html">
+            
+                <a href="../chapter2/font-awesome.html">
+            
+                    
+                    font-awesome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/ng-file-upload.html">
+            
+                <a href="../chapter2/ng-file-upload.html">
+            
+                    
+                    ng-file-upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter2/ng-csv.html">
+            
+                <a href="../chapter2/ng-csv.html">
+            
+                    
+                    ng-csv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter2/angular-translate.html">
+            
+                <a href="../chapter2/angular-translate.html">
+            
+                    
+                    angular-translate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter2/angular-ui-router.html">
+            
+                <a href="../chapter2/angular-ui-router.html">
+            
+                    
+                    angular-ui-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../chapter2/angular-resource.html">
+            
+                <a href="../chapter2/angular-resource.html">
+            
+                    
+                    angular-resource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../chapter2/angular-clipboard.html">
+            
+                <a href="../chapter2/angular-clipboard.html">
+            
+                    
+                    angular-clipboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../chapter2/angular-growl.html">
+            
+                <a href="../chapter2/angular-growl.html">
+            
+                    
+                    angular-growl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../chapter2/angular-qrcode.html">
+            
+                <a href="../chapter2/angular-qrcode.html">
+            
+                    
+                    angular-qrcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../chapter2/angular-translate.html">
+            
+                <a href="../chapter2/angular-translate.html">
+            
+                    
+                    angular-translate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../chapter2/jdenticon实现根据用户名显示不同的用户图像.html">
+            
+                <a href="../chapter2/jdenticon实现根据用户名显示不同的用户图像.html">
+            
+                    
+                    jdenticon实现根据登陆用户名显示不同的用户图像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../chapter2/关于极验验证和点击发送验证码之间的逻辑总结.html">
+            
+                <a href="../chapter2/关于极验验证和点击发送验证码之间的逻辑总结.html">
+            
+                    
+                    gt极验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ejt重点知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="angularjs权限与授权.html">
+            
+                <a href="angularjs权限与授权.html">
+            
+                    
+                    认证和授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="翻译流程.html">
+            
+                <a href="翻译流程.html">
+            
+                    
+                    翻译流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="路由布局.html">
+            
+                <a href="路由布局.html">
+            
+                    
+                    路由布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="关于后端接口如果返回字符串该如何处理.html">
+            
+                <a href="关于后端接口如果返回字符串该如何处理.html">
+            
+                    
+                    关于后端接口如果返回字符串该如何处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="关于用拦截器统一处理操作成功的逻辑.html">
+            
+                <a href="关于用拦截器统一处理操作成功的逻辑.html">
+            
+                    
+                    关于用拦截器统一处理操作成功的逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="懒加载.html">
+            
+                <a href="懒加载.html">
+            
+                    
+                    懒加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="关于项目中接口出现403，400，500等情况如何用拦截器做处理的.html">
+            
+                <a href="关于项目中接口出现403，400，500等情况如何用拦截器做处理的.html">
+            
+                    
+                    关于项目中responseerror情况的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="关于全选和单选的servce.html">
+            
+                <a href="关于全选和单选的servce.html">
+            
+                    
+                    关于全选和单选的servce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="关于angular-ui-select的用法.html">
+            
+                <a href="关于angular-ui-select的用法.html">
+            
+                    
+                    关于angular-ui-select的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="分页指令.html">
+            
+                <a href="分页指令.html">
+            
+                    
+                    分页指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="AOP.html">
+            
+                <a href="AOP.html">
+            
+                    
+                    AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.12" data-path="ejtone.auth.html">
+            
+                <a href="ejtone.auth.html">
+            
+                    
+                    ejt权限代码过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="codeStyle.html">
+            
+                <a href="codeStyle.html">
+            
+                    
+                    css规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="resource和后端交互.html">
+            
+                <a href="resource和后端交互.html">
+            
+                    
+                    如何使用$resource和后端交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    angularjs知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/关于利用路由resolve提前获取页面所需要的数据.html">
+            
+                <a href="../chapter4/关于利用路由resolve提前获取页面所需要的数据.html">
+            
+                    
+                    关于利用路由resolve提前获取页面所需要的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/angular之$anchorScroll.html">
+            
+                <a href="../chapter4/angular之$anchorScroll.html">
+            
+                    
+                    angular $anchorScroll链接至本页某处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/controllerAs,this和$scope的区别.html">
+            
+                <a href="../chapter4/controllerAs,this和$scope的区别.html">
+            
+                    
+                    controllerAs,this和$scope的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/$q承诺与延迟.html">
+            
+                <a href="../chapter4/$q承诺与延迟.html">
+            
+                    
+                    $q 承诺与延迟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/ngReadonly、ngSelected、ngDisabled的区别.html">
+            
+                <a href="../chapter4/ngReadonly、ngSelected、ngDisabled的区别.html">
+            
+                    
+                    AngularJs ngReadonly、ngSelected、ngDisabled的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter4/AngularJs$sce.html">
+            
+                <a href="../chapter4/AngularJs$sce.html">
+            
+                    
+                    AngularJs $sce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter4/如何给请求头统一加Authorization.html">
+            
+                <a href="../chapter4/如何给请求头统一加Authorization.html">
+            
+                    
+                    如何给请求头统一加Authorization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter4/如何使用ui-bootstrap弹出模态层.html">
+            
+                <a href="../chapter4/如何使用ui-bootstrap弹出模态层.html">
+            
+                    
+                    如何使用ui-bootstrap弹出模态层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../chapter4/关于angular-foreach.html">
+            
+                <a href="../chapter4/关于angular-foreach.html">
+            
+                    
+                    关于angular-foreach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../chapter4/angularjs表单验证.html">
+            
+                <a href="../chapter4/angularjs表单验证.html">
+            
+                    
+                    angularjs表单验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../chapter4/angularjs表单验证.html">
+            
+                <a href="../chapter4/angularjs表单验证.html">
+            
+                    
+                    angularjs关于下拉选框的几种应用情况
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    css知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/css设置内容超过长度用...代替.html">
+            
+                <a href="../chapter5/css设置内容超过长度用...代替.html">
+            
+                    
+                    css设置内容超过长度用...代替
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/flex属性.html">
+            
+                <a href="../chapter5/flex属性.html">
+            
+                    
+                    css flex属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    前端零碎知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/关于点击图片放大的效果代码实现.html">
+            
+                <a href="../chapter5/关于点击图片放大的效果代码实现.html">
+            
+                    
+                    关于点击图片放大的效果代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/正则表达式大全.html">
+            
+                <a href="../chapter5/正则表达式大全.html">
+            
+                    
+                    正则表达式大全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/event preventDefault.html">
+            
+                <a href="../chapter5/event preventDefault.html">
+            
+                    
+                    event.preventDefault()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../end/">
+            
+                <a href="../end/">
+            
+                    
+                    结束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ejt权限代码过程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6743;&#x9650;&#x6587;&#x6863;">&#x6743;&#x9650;&#x6587;&#x6863;</h1>
+<p>&#x200B;                                         -------------------------Author by chenyanwen</p>
+<blockquote>
+<p>&#x5F53;&#x524D;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x5728;&#x505A;&#x6743;&#x9650;&#x8BA4;&#x8BC1;&#x7684;&#x53EA;&#x6709;&#x4E24;&#x5904;&#xFF0C;&#x4E14;&#x8C03;&#x7528;&#x7684;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x4ECE;&#x8FD9;&#x91CC;&#x4E24;&#x5904;&#x5165;&#x624B;</p>
+</blockquote>
+<h3 id="&#x9879;&#x76EE;&#x7684;&#x521D;&#x59CB;&#x5316;&#x7B2C;&#x4E00;&#x5904;">&#x9879;&#x76EE;&#x7684;&#x521D;&#x59CB;&#x5316;(&#x7B2C;&#x4E00;&#x5904;)</h3>
+<p>&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x5728;&#x521D;&#x59CB;&#x5316;&#x7684;&#x65F6;&#x5019;</p>
+<pre><code>module.run&#x4E2D;
+&#x8C03;&#x7528;&#x4E86;
+stateHandler.initialize();
+
+&#x4F4D;&#x7F6E;&#xFF1A;(src/main/webapp/app/blocks/handlers/state.handler.js)
+</code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x5F00;&#x59CB;&#x5BF9;$stateChangeStart&#x4E8B;&#x4EF6;&#x8FDB;&#x884C;&#x76D1;&#x542C;&#xFF0C;&#x8FD9;&#x4E2A;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#x5728;&#x6574;&#x4E2A;&#x9879;&#x76EE;
+&#x521D;&#x59CB;&#x5316;&#x65F6;&#x5019;&#x5B9A;&#x4E49;&#x597D;&#xFF0C;&#x5E76;&#x4E14;&#x7ACB;&#x5373;&#x5F00;&#x59CB;&#x53D1;&#x6325;&#x4F5C;&#x7528;</p>
+<pre><code>&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x505A;&#x4E86;&#x4E24;&#x4EF6;&#x4E8B;&#x60C5;&#xFF1A;
+
+1.&#x5728;$rootScope&#x4E0A;&#x6839;&#x636E;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x6302;&#x8F7D;
+toState&#xFF0C; toStateParams&#xFF0C; fromState
+
+2.&#x5982;&#x679C;Principal&#x670D;&#x52A1;&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x53D8;&#x91CF;_identity&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;(&#x4E0E;&#x662F;&#x5426;&#x767B;&#x5F55;&#x540C;&#x6B65;)
+&#x5C31;&#x8FDB;&#x5165;Auth.authorize()&#x65B9;&#x6CD5;&#x3002;
+</code></pre><pre><code>*** Auth.authorize()&#x65B9;&#x6CD5;&#x662F;&#x6743;&#x9650;&#x8BA4;&#x8BC1;&#x7684;&#x552F;&#x4E00;&#x65B9;&#x6CD5;***
+
+Principal&#x670D;&#x52A1;&#x4F4D;&#x7F6E;&#xFF1A;src/main/webapp/app/services/auth/principal.service.js
+Auth.authorize()&#x4F4D;&#x7F6E;&#xFF1A;src/main/webapp/app/services/auth/auth.service.js
+</code></pre><p>&#x7531;&#x4EE5;&#x4E0A;&#x4FE1;&#x606F;&#x53EF;&#x77E5;&#xFF0C;&#x8FD9;&#x4E2A;&#x6743;&#x9650;&#x9274;&#x522B;&#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x66F4;&#x6362;&#x8DEF;&#x7531;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;_identity&#x5B58;&#x5728;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x624D;
+&#x4F1A;&#x53D1;&#x6325;&#x4F5C;&#x7528;&#x3002;</p>
+<h3 id="homestate&#x8DEF;&#x7531;&#x7684;&#x9884;&#x5904;&#x7406;&#x7B2C;&#x4E8C;&#x5904;">home.state&#x8DEF;&#x7531;&#x7684;&#x9884;&#x5904;&#x7406;(&#x7B2C;&#x4E8C;&#x5904;)</h3>
+<p>&#x8FD9;&#x4E2A;&#x8DEF;&#x7531;&#x662F;&#x9664;&#x4E86;&#x767B;&#x5F55;&#x9875;&#x4E4B;&#x5916;&#x7684;&#x5DE6;&#x53F3;&#x5176;&#x4ED6;&#x8DEF;&#x7531;&#x7684;&#x7236;&#x8DEF;&#x7531;&#x3002;</p>
+<pre><code> authorize: [&apos;Auth&apos;,
+             function (Auth) {
+               return Auth.authorize();
+           }
+      ]
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x8DEF;&#x7531;&#x7684;&#x9884;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;&#x4E86;authorize&#x65B9;&#x6CD5;&#x3002;
+&#x4E5F;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x63D0;&#x8FC7;&#x7684;&#x6743;&#x9650;&#x9274;&#x522B;&#x7684;&#x552F;&#x4E00;&#x51FD;&#x6570;&#x3002;</p>
+<blockquote>
+<p>&#x9879;&#x76EE;&#x7684;&#x6743;&#x9650;&#x9274;&#x522B;&#x5728;&#x4EE5;&#x4E0A;&#x7684;&#x4E24;&#x5904;&#x914D;&#x5408;&#x5B8C;&#x6210;&#x4FDD;&#x8BC1;&#x5B8C;&#x6574;&#x6027;</p>
+</blockquote>
+<ol>
+<li>&#x8FDB;&#x5165;&#x4E3B;&#x9875;&#x4E4B;&#x540E;&#x7684;&#x6743;&#x9650;&#x9274;&#x5B9A;&#xFF0C;&#x5168;&#x90E8;&#x7531;$stateChangeStart&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x6765;&#x505A;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x901A;&#x8FC7;&#x590D;&#x5236;&#x94FE;&#x63A5;&#x6216;&#x8005;&#x786C;&#x5237;&#x65B0;&#x7B49;&#x975E;&#x767B;&#x5F55;&#x9014;&#x5F84;&#x8FDB;&#x5165;&#x9879;&#x76EE;&#xFF0C;&#x5219;&#x4F1A;&#x88AB;home.state&#x7684;&#x9884;&#x5904;&#x7406;&#x62E6;&#x622A;&#x3002;</li>
+</ol>
+<h3 id="authauthorize">Auth.authorize()</h3>
+<p>&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x552F;&#x4E00;&#x7684;&#x6743;&#x9650;&#x9274;&#x522B;&#x51FD;&#x6570;&#x90FD;&#x505A;&#x4E86;&#x4EC0;&#x4E48;?</p>
+<pre><code>1. Auth.authorize()&#x65B9;&#x6CD5;&#x9996;&#x5148;&#x4F1A;&#x8C03;&#x7528;Principal.identity()
+
+Principal.identity()&#x5185;&#x90E8;&#x4F1A;&#x5BF9;&#x540E;&#x7AEF;&#x53D1;&#x8D77;&#x4E24;&#x4E2A;&#x8BF7;&#x6C42;
+
+//&#x83B7;&#x53D6;&#x7528;&#x6237;&#x6743;&#x9650;&#x4FE1;&#x606F;
+Account.get().$promise.then(getAccountThen);
+//&#x83B7;&#x53D6;&#x8BE5;&#x5DF2;&#x6CE8;&#x518C;&#x7528;&#x6237;&#x53CA;&#x8BA4;&#x8BC1;&#x4FE1;&#x606F;
+UserInfo.get().$promise.then(getUserinfoThen);
+2.Auth.authorize()&#x62FF;&#x5230;identity&#x8FD4;&#x56DE;&#x6765;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7B49;&#x7B49;
+&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5224;&#x65AD;&#x54EA;&#x4E9B;&#x8DEF;&#x7531;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;
+</code></pre><h3 id="&#x767B;&#x5F55;">&#x767B;&#x5F55;</h3>
+<p>&#x6211;&#x4EEC;&#x6765;&#x8D70;&#x4E00;&#x904D;&#x767B;&#x5F55;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<pre><code>&#x8C03;&#x7528;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x7684;login   (src/main/webapp/app/components/login/login.controller.js)
+|
+|
+|
+&#x8C03;&#x7528;Auth.login   (src/main/webapp/app/services/auth/auth.service.js)
+|
+|
+|
+&#x8C03;&#x7528;AuthServerProvider.login   (src/main/webapp/app/services/auth/auth.jwt.service.js)
+&#x5728;&#x8FD9;&#x91CC;&#x5411;&#x540E;&#x7AEF;(api/authenticate)&#x53D1;&#x9001;&#x767B;&#x5F55;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;(user,password,rememberme)
+&#x5E76;&#x4E14;&#x4ECE;&#x8FD4;&#x56DE;&#x7684;data&#x4E2D;&#x83B7;&#x53D6;token
+var jwt = data.koken;
+
+&#x7136;&#x540E;&#x6839;&#x636E;remember&#x53C2;&#x6570;&#x51B3;&#x5B9A;token&#x662F;&#x4FDD;&#x5B58;&#x5728;&#xFF08;localStorage&#x548C;$rootScope&#xFF09;&#x6216;&#x8005;&#xFF08;sessionStrorage&#xFF09;
+|
+|
+|
+&#x56DE;&#x5230;Auth.login
+&#x5728;&#x8FD9;&#x91CC;&#x8C03;&#x7528;Principal.identity(true),&#x53C8;&#x91CD;&#x65B0;&#x83B7;&#x53D6;&#x4E86;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;
+|
+|
+|
+&#x56DE;&#x5230;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x7684;login
+$state.go(overview)
+</code></pre><pre><code>&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#x62E6;&#x622A;&#x5668;auth.interceptor.js   (src/main/webapp/app/blocks/interceptor/auth.interceptor.js)
+&#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x7684;&#x8BF7;&#x6C42;&#x5934;&#x4E2D;&#x6DFB;&#x52A0;token
+</code></pre><p>&#x6240;&#x4EE5;&#x968F;&#x7740;&#x7528;&#x6237;&#x7684;&#x4E00;&#x6B21;&#x767B;&#x5F55;&#xFF0C;&#x6211;&#x4EEC;&#x83B7;&#x5F97;&#x4E86;&#x8BE5;&#x7528;&#x6237;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x968F;&#x7740;&#x7528;&#x6237;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x90FD;&#x4F1A;&#x5E26;&#x6709;
+&#x4ED6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x7684;token&#x3002;</p>
+<h3 id="&#x767B;&#x51FA;">&#x767B;&#x51FA;</h3>
+<p>&#x767B;&#x51FA;&#x5C31;&#x76F8;&#x5BF9;&#x7B80;&#x5355;&#x5F97;&#x591A;&#x3002;</p>
+<ol>
+<li>&#x5220;&#x9664;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#x7684;token&#x3002;</li>
+<li>&#x6E05;&#x7A7A;&#x548C;&#x53D6;&#x53CD;principal&#x4E2D;&#x7684;_identity, _authenticated&#x3002;</li>
+<li>$state.go(login)&#x3002;<h3 id="&#x76EE;&#x524D;&#x9700;&#x6C42;&#x7684;&#x7ED3;&#x5C40;&#x65B9;&#x6848;">&#x76EE;&#x524D;&#x9700;&#x6C42;&#x7684;&#x7ED3;&#x5C40;&#x65B9;&#x6848;</h3>
+&#x9700;&#x6C42;1&#xFF1A;&#x767B;&#x9646;&#x7684;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x767B;&#x5F55;</li>
+</ol>
+<p>&#x65B9;&#x6848;&#xFF1A;&#x5728;token&#x4E0A;&#x52A0;&#x4E0A;&#x65F6;&#x95F4;&#x9650;&#x5236;&#xFF0C;&#x7531;&#x540E;&#x7AEF;&#x5224;&#x65AD;&#x5E76;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x72B6;&#x6001;&#x7801;&#x3002;</p>
+<p>&#x9700;&#x6C42;2&#xFF1A;&#x5982;&#x4F55;&#x6839;&#x636E;&#x52A8;&#x6001;&#x65B0;&#x589E;&#x7684;&#x6743;&#x9650;&#x51B3;&#x5B9A;&#x90A3;&#x4E9B;&#x8DEF;&#x7531;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x65B9;&#x6848;&#xFF1A;&#x540E;&#x7AEF;&#x8FD4;&#x56DE;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x4E0A;&#x65B0;&#x589E;&#x8DEF;&#x7531;&#x5217;&#x8868;&#xFF0C;&#x5728;authorize&#x51FD;&#x6570;&#x4E2D;&#x6839;&#x636E;&#x8FD9;&#x4E2A;
+&#x5217;&#x8868;&#x9274;&#x6743;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="AOP.html" class="navigation navigation-prev " aria-label="Previous page: AOP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="codeStyle.html" class="navigation navigation-next " aria-label="Next page: css规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ejt权限代码过程","level":"1.4.12","depth":2,"next":{"title":"css规范","level":"1.4.13","depth":2,"path":"chapter3/codeStyle.md","ref":"chapter3/codeStyle.md","articles":[]},"previous":{"title":"AOP","level":"1.4.11","depth":2,"path":"chapter3/AOP.md","ref":"chapter3/AOP.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/ejtone.auth.md","mtime":"2017-06-21T01:31:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-23T10:11:57.688Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

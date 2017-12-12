@@ -1,0 +1,1250 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>gulp自动化构建项目过程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bower的使用.html" />
+    
+    
+    <link rel="prev" href="git使用.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于ejt1项目简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="tool.html">
+            
+                <a href="tool.html">
+            
+                    
+                    工具类使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="入门前端必备知识技能及学习网站.html">
+            
+                <a href="入门前端必备知识技能及学习网站.html">
+            
+                    
+                    入门前端必备知识技能及学习网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="新机器配置环境文档.html">
+            
+                <a href="新机器配置环境文档.html">
+            
+                    
+                    新机器配置环境文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="git使用.html">
+            
+                <a href="git使用.html">
+            
+                    
+                    git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="gulp自动化构建项目过程.html">
+            
+                <a href="gulp自动化构建项目过程.html">
+            
+                    
+                    gulp自动化构建项目过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="bower的使用.html">
+            
+                <a href="bower的使用.html">
+            
+                    
+                    bower的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="gitbook的使用.html">
+            
+                <a href="gitbook的使用.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="wikimd的用法.html">
+            
+                <a href="wikimd的用法.html">
+            
+                    
+                    wikimd的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="swagger使用-v1.0.html">
+            
+                <a href="swagger使用-v1.0.html">
+            
+                    
+                    swagger使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="jhipster的使用.html">
+            
+                <a href="jhipster的使用.html">
+            
+                    
+                    jhipster的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="Yeoman.html">
+            
+                <a href="Yeoman.html">
+            
+                    
+                    Yeoman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="webpack.html">
+            
+                <a href="webpack.html">
+            
+                    
+                    webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="requirejs的应用.html">
+            
+                <a href="requirejs的应用.html">
+            
+                    
+                    requirejs的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    组件类使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/ocLazyLoad.html">
+            
+                <a href="../chapter2/ocLazyLoad.html">
+            
+                    
+                    ocLazyLoad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/font-awesome.html">
+            
+                <a href="../chapter2/font-awesome.html">
+            
+                    
+                    font-awesome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/ng-file-upload.html">
+            
+                <a href="../chapter2/ng-file-upload.html">
+            
+                    
+                    ng-file-upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter2/ng-csv.html">
+            
+                <a href="../chapter2/ng-csv.html">
+            
+                    
+                    ng-csv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter2/angular-translate.html">
+            
+                <a href="../chapter2/angular-translate.html">
+            
+                    
+                    angular-translate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter2/angular-ui-router.html">
+            
+                <a href="../chapter2/angular-ui-router.html">
+            
+                    
+                    angular-ui-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../chapter2/angular-resource.html">
+            
+                <a href="../chapter2/angular-resource.html">
+            
+                    
+                    angular-resource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../chapter2/angular-clipboard.html">
+            
+                <a href="../chapter2/angular-clipboard.html">
+            
+                    
+                    angular-clipboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../chapter2/angular-growl.html">
+            
+                <a href="../chapter2/angular-growl.html">
+            
+                    
+                    angular-growl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../chapter2/angular-qrcode.html">
+            
+                <a href="../chapter2/angular-qrcode.html">
+            
+                    
+                    angular-qrcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../chapter2/angular-translate.html">
+            
+                <a href="../chapter2/angular-translate.html">
+            
+                    
+                    angular-translate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../chapter2/jdenticon实现根据用户名显示不同的用户图像.html">
+            
+                <a href="../chapter2/jdenticon实现根据用户名显示不同的用户图像.html">
+            
+                    
+                    jdenticon实现根据登陆用户名显示不同的用户图像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../chapter2/关于极验验证和点击发送验证码之间的逻辑总结.html">
+            
+                <a href="../chapter2/关于极验验证和点击发送验证码之间的逻辑总结.html">
+            
+                    
+                    gt极验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    ejt重点知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/angularjs权限与授权.html">
+            
+                <a href="../chapter3/angularjs权限与授权.html">
+            
+                    
+                    认证和授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/翻译流程.html">
+            
+                <a href="../chapter3/翻译流程.html">
+            
+                    
+                    翻译流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter3/路由布局.html">
+            
+                <a href="../chapter3/路由布局.html">
+            
+                    
+                    路由布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter3/关于后端接口如果返回字符串该如何处理.html">
+            
+                <a href="../chapter3/关于后端接口如果返回字符串该如何处理.html">
+            
+                    
+                    关于后端接口如果返回字符串该如何处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter3/关于用拦截器统一处理操作成功的逻辑.html">
+            
+                <a href="../chapter3/关于用拦截器统一处理操作成功的逻辑.html">
+            
+                    
+                    关于用拦截器统一处理操作成功的逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter3/懒加载.html">
+            
+                <a href="../chapter3/懒加载.html">
+            
+                    
+                    懒加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter3/关于项目中接口出现403，400，500等情况如何用拦截器做处理的.html">
+            
+                <a href="../chapter3/关于项目中接口出现403，400，500等情况如何用拦截器做处理的.html">
+            
+                    
+                    关于项目中responseerror情况的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter3/关于全选和单选的servce.html">
+            
+                <a href="../chapter3/关于全选和单选的servce.html">
+            
+                    
+                    关于全选和单选的servce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../chapter3/关于angular-ui-select的用法.html">
+            
+                <a href="../chapter3/关于angular-ui-select的用法.html">
+            
+                    
+                    关于angular-ui-select的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../chapter3/分页指令.html">
+            
+                <a href="../chapter3/分页指令.html">
+            
+                    
+                    分页指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../chapter3/AOP.html">
+            
+                <a href="../chapter3/AOP.html">
+            
+                    
+                    AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../chapter3/ejtone.auth.html">
+            
+                <a href="../chapter3/ejtone.auth.html">
+            
+                    
+                    ejt权限代码过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../chapter3/codeStyle.html">
+            
+                <a href="../chapter3/codeStyle.html">
+            
+                    
+                    css规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../chapter3/resource和后端交互.html">
+            
+                <a href="../chapter3/resource和后端交互.html">
+            
+                    
+                    如何使用$resource和后端交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    angularjs知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/关于利用路由resolve提前获取页面所需要的数据.html">
+            
+                <a href="../chapter4/关于利用路由resolve提前获取页面所需要的数据.html">
+            
+                    
+                    关于利用路由resolve提前获取页面所需要的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/angular之$anchorScroll.html">
+            
+                <a href="../chapter4/angular之$anchorScroll.html">
+            
+                    
+                    angular $anchorScroll链接至本页某处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/controllerAs,this和$scope的区别.html">
+            
+                <a href="../chapter4/controllerAs,this和$scope的区别.html">
+            
+                    
+                    controllerAs,this和$scope的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/$q承诺与延迟.html">
+            
+                <a href="../chapter4/$q承诺与延迟.html">
+            
+                    
+                    $q 承诺与延迟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/ngReadonly、ngSelected、ngDisabled的区别.html">
+            
+                <a href="../chapter4/ngReadonly、ngSelected、ngDisabled的区别.html">
+            
+                    
+                    AngularJs ngReadonly、ngSelected、ngDisabled的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter4/AngularJs$sce.html">
+            
+                <a href="../chapter4/AngularJs$sce.html">
+            
+                    
+                    AngularJs $sce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter4/如何给请求头统一加Authorization.html">
+            
+                <a href="../chapter4/如何给请求头统一加Authorization.html">
+            
+                    
+                    如何给请求头统一加Authorization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../chapter4/如何使用ui-bootstrap弹出模态层.html">
+            
+                <a href="../chapter4/如何使用ui-bootstrap弹出模态层.html">
+            
+                    
+                    如何使用ui-bootstrap弹出模态层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../chapter4/关于angular-foreach.html">
+            
+                <a href="../chapter4/关于angular-foreach.html">
+            
+                    
+                    关于angular-foreach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../chapter4/angularjs表单验证.html">
+            
+                <a href="../chapter4/angularjs表单验证.html">
+            
+                    
+                    angularjs表单验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../chapter4/angularjs表单验证.html">
+            
+                <a href="../chapter4/angularjs表单验证.html">
+            
+                    
+                    angularjs关于下拉选框的几种应用情况
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    css知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/css设置内容超过长度用...代替.html">
+            
+                <a href="../chapter5/css设置内容超过长度用...代替.html">
+            
+                    
+                    css设置内容超过长度用...代替
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/flex属性.html">
+            
+                <a href="../chapter5/flex属性.html">
+            
+                    
+                    css flex属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    前端零碎知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter5/关于点击图片放大的效果代码实现.html">
+            
+                <a href="../chapter5/关于点击图片放大的效果代码实现.html">
+            
+                    
+                    关于点击图片放大的效果代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter5/正则表达式大全.html">
+            
+                <a href="../chapter5/正则表达式大全.html">
+            
+                    
+                    正则表达式大全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter5/event preventDefault.html">
+            
+                <a href="../chapter5/event preventDefault.html">
+            
+                    
+                    event.preventDefault()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../end/">
+            
+                <a href="../end/">
+            
+                    
+                    结束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >gulp自动化构建项目过程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>[TOC]</p>
+<h2 id="gulp&#x81EA;&#x52A8;&#x5316;&#x6784;&#x5EFA;&#x9879;&#x76EE;&#x8FC7;&#x7A0B;">gulp&#x81EA;&#x52A8;&#x5316;&#x6784;&#x5EFA;&#x9879;&#x76EE;&#x8FC7;&#x7A0B;</h2>
+<h3 id="gulp&#x4ECB;&#x7ECD;">gulp&#x4ECB;&#x7ECD;</h3>
+<p>1.css&#x538B;&#x7F29; &#x3000;&#x3000;gulp-clean-css</p>
+<p>2.js&#x538B;&#x7F29;&#x3000;&#x3000;&#x3000;gulp-uglify</p>
+<p>3.js&#x5408;&#x5E76;&#x3000;&#x3000;&#x3000;gulp-concat&#x3000;&#x3000;</p>
+<p>gulp&#x501F;&#x9274;&#x4E86;Unix&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x7BA1;&#x9053;&#xFF08;pipe&#xFF09;&#x601D;&#x60F3;&#xFF0C;&#x524D;&#x4E00;&#x7EA7;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x76F4;&#x63A5;&#x53D8;&#x6210;&#x540E;&#x4E00;&#x7EA7;&#x7684;&#x8F93;&#x5165;&#xFF0C;gulp.src&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6D41;&#x81F3;&#x53EF;&#x7528;&#x63D2;&#x4EF6;;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#x652F;&#x6301;&#xFF1B;</p>
+<p>&#x538B;&#x7F29; js &#x4EE3;&#x7801;&#x53EF;&#x964D;&#x4F4E; js &#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF0C;&#x63D0;&#x9AD8;&#x9875;&#x9762;&#x6253;&#x5F00;&#x901F;&#x5EA6;;gulp&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x6307;&#x4EE4;&#x5373;&#x53EF;&#x538B;&#x7F29;</p>
+<p>gulp&#x662F;&#x57FA;&#x4E8E;nodejs&#x7684;&#x81EA;&#x52A8;&#x4EFB;&#x52A1;&#x8FD0;&#x884C;&#x5668;&#xFF0C;&#x5979;&#x80FD;&#x81EA;&#x52A8;&#x5730;&#x5B8C;&#x6210; &#x6587;&#x4EF6;&#x7684;&#x6D4B;&#x8BD5;&#xFF0C;&#x68C0;&#x67E5;&#xFF0C;&#x5408;&#x5E76;&#xFF0C;&#x538B;&#x7F29;&#xFF0C;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#xFF0C;&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x751F;&#x6210;&#xFF0C;&#x5E76;&#x76D1;&#x542C;&#x6587;&#x4EF6;&#x5728;&#x6539;&#x52A8;&#x540E;&#x91CD;&#x590D;&#x6307;&#x5B9A;&#x7684;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;</p>
+<pre><code>gulp
+</code></pre><h3 id="npm&#x4ECB;&#x7ECD;">npm&#x4ECB;&#x7ECD;</h3>
+<pre><code>&#x5B89;&#x88C5;&#x5B8C;node&#x4EE5;&#x540E;&#xFF0C;npm&#x81EA;&#x52A8;&#x5B89;&#x88C5;&#x6210;&#x529F;&#xFF1B;
+npm init&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;package.json&#x6587;&#x4EF6;
+</code></pre><h3 id="&#x4EE5;bower&#xFF0B;gulp&#x4E3A;&#x4F8B;&#x7684;js--demo">&#x4EE5;bower&#xFF0B;gulp&#x4E3A;&#x4F8B;&#x7684;js  DEMO</h3>
+<h4 id="&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x5939;&#x6D4B;&#x8BD5;gulpdemo">&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x5939;&#x6D4B;&#x8BD5;gulpdemo</h4>
+<pre><code>mkdir testgulp
+</code></pre><h4 id="&#x521D;&#x59CB;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#xFF1A;&#x5B89;&#x88C5;gulp">&#x521D;&#x59CB;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#xFF1A;&#x5B89;&#x88C5;gulp</h4>
+<h5 id="&#x5168;&#x5C40;&#x5B89;&#x88C5;">&#x5168;&#x5C40;&#x5B89;&#x88C5;</h5>
+<pre><code>npm install -g gulp//&#x5168;&#x5C40;&#x5B89;&#x88C5;gulp&#xFF0C;-g&#x8868;&#x793A;&#x5728;&#x5168;&#x5C40;&#x73AF;&#x5883;&#x5B89;&#x88C5;&#xFF0C;&#x4EE5;&#x4FBF;&#x4EFB;&#x4F55;&#x9879;&#x76EE;&#x90FD;&#x80FD;&#x4F7F;&#x7528;&#x5B83;
+</code></pre><h5 id="&#x5C06;gulp&#x5B89;&#x88C5;&#x5230;&#x9879;&#x76EE;&#x672C;&#x5730;">&#x5C06;gulp&#x5B89;&#x88C5;&#x5230;&#x9879;&#x76EE;&#x672C;&#x5730;</h5>
+<pre><code>npm install &#x2014;-save-dev gulp //&#x2014;-save-dev &#x6765;&#x66F4;&#x65B0;package.json&#x6587;&#x4EF6;,&#x66F4;&#x65B0; devDependencies &#x503C;&#xFF0C;&#x4EE5;&#x8868;&#x660E;&#x9879;&#x76EE;&#x9700;&#x8981;&#x4F9D;&#x8D56;gulp&#x3002;Dependencies &#x53EF;&#x4EE5;&#x5411;&#x5176;&#x4ED6;&#x53C2;&#x4E0E;&#x9879;&#x76EE;&#x7684;&#x4EBA;&#x6307;&#x660E;&#x9879;&#x76EE;&#x5728;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x548C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x7684;node&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;
+</code></pre><h4 id="&#x67E5;&#x770B;gulp&#x7684;&#x7248;&#x672C;">&#x67E5;&#x770B;gulp&#x7684;&#x7248;&#x672C;</h4>
+<pre><code>gulp -v
+</code></pre><h4 id="&#x521B;&#x5EFA;gulpfilejs">&#x521B;&#x5EFA;<strong>gulpfile.js</strong></h4>
+<h5 id="1&#x83B7;&#x53D6;-gulp">1.&#x83B7;&#x53D6; gulp</h5>
+<pre><code>var gulp = require(&apos;gulp&apos;);
+</code></pre><h5 id="&#x83B7;&#x53D6;-uglify-&#x6A21;&#x5757;&#xFF08;&#x7528;&#x4E8E;&#x538B;&#x7F29;-js">&#x83B7;&#x53D6; uglify &#x6A21;&#x5757;&#xFF08;&#x7528;&#x4E8E;&#x538B;&#x7F29; JS)</h5>
+<pre><code>var uglify = require(&apos;gulp-uglify&apos;);
+</code></pre><h5 id="&#x538B;&#x7F29;-js-&#x6587;&#x4EF6;">&#x538B;&#x7F29; js &#x6587;&#x4EF6;</h5>
+<pre><code>.pipe(uglify())
+</code></pre><h5 id="&#x521B;&#x5EFA;&#x538B;&#x7F29;&#x4EFB;&#x52A1;">&#x521B;&#x5EFA;&#x538B;&#x7F29;&#x4EFB;&#x52A1;</h5>
+<pre><code>gulp.task(&apos;script&apos;, function() {
+    gulp.src(&apos;js/myapp.js&apos;)// 1. &#x627E;&#x5230;&#x76EE;&#x6807;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;
+    .pipe(uglify())      // 2. &#x538B;&#x7F29;&#x6587;&#x4EF6;
+    .pipe(gulp.dest(&apos;dist/js/myjavascript&apos;)) // 3. &#x53E6;&#x5B58;&#x538B;&#x7F29;&#x540E;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5C06;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x5B83;&#xFF0C;&#x6267;&#x884C;gulp script&#x547D;&#x4EE4;&#x540E;&#x5C06;&#x53EF;&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x770B;&#x5230;dist&#xFF0F;js/myjavascript&#x6587;&#x4EF6;&#x5939;&#x5E76;&#x4E14;&#x6709;&#x538B;&#x7F29;&#x540E;&#x7684;myapp.js
+});
+&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;gulp script&#x542F;&#x52A8;&#x6B64;&#x4EFB;&#x52A1;
+</code></pre><h5 id="&#x5173;&#x4E8E;gulpfilejs&#x7684;&#x6CE8;&#x91CA;">&#x5173;&#x4E8E;gulpfile.js&#x7684;&#x6CE8;&#x91CA;</h5>
+<pre><code>gulp.task(taskname, function(){taskContent}) 
+gulp.src(filepath) 
+gulp.dest(filepath)
+gulp.pipe() //&#x7BA1;&#x9053;,pipe&#x53EF;&#x7406;&#x89E3;&#x4E3A;&#x5C06;&#x64CD;&#x4F5C;&#x52A0;&#x5165;&#x6267;&#x884C;&#x961F;&#x5217;
+</code></pre><h4 id="gulp&#x7684;watch&#x7528;&#x6CD5;">gulp&#x7684;watch&#x7528;&#x6CD5;</h4>
+<pre><code>&#x76D1;&#x89C6;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5728;&#x6587;&#x4EF6;&#x53D1;&#x751F;&#x6539;&#x52A8;&#x65F6;&#x5019;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;
+</code></pre><h6 id="&#x4E3E;&#x4F8B;">&#x4E3E;&#x4F8B;</h6>
+<pre><code>gulp.watch(&apos;js/myapp.js&apos;,[&apos;script&apos;])//&#x76D1;&#x6D4B;myapp.js&#xFF0C;&#x8B6C;&#x5982;&#x6539;&#x52A8;&#x5C31;&#x6267;&#x884C;&#x4EFB;&#x52A1;script
+</code></pre><h4 id="gulp&#x7684;taskscrpit&#x529F;&#x80FD;">gulp&#x7684;task(scrpit)&#x529F;&#x80FD;</h4>
+<pre><code>&#xFF0F;&#xFF0F;script&#x8868;&#x793A;js&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x6B64;&#x521B;&#x5EFA;&#x538B;&#x7F29;&#x4EFB;&#x52A1;&#xFF0C;
+gulp.task(&apos;script&apos;, function(){}
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;gulp.src(&apos;js/&#xFF0A;.js&apos;)</p>
+<pre><code>*&#x8868;&#x793A;&#x6240;&#x6709;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x538B;&#x7F29;&#x591A;&#x4E2A;js&#x6587;&#x4EF6;
+</code></pre><h4 id="gulp&#x7684;task&#xFF08;auto&#xFF09;&#x529F;&#x80FD;">gulp&#x7684;task&#xFF08;auto&#xFF09;&#x529F;&#x80FD;</h4>
+<pre><code>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x8F93;&#x5165; gulp auto&#xFF0C;&#x81EA;&#x52A8;&#x76D1;&#x542C; js/*.js &#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x540E;&#x538B;&#x7F29;js
+</code></pre><h6 id="&#x4E3E;&#x4F8B;">&#x4E3E;&#x4F8B;</h6>
+<pre><code>gulp.task(&apos;auto&apos;,function(){
+    gulp.watch(&apos;js/myapp.js&apos;,[&apos;script&apos;])
+})
+</code></pre><h4 id="&#x4F7F;&#x7528;-gulptaskdefault-fn-&#x5B9A;&#x4E49;&#x9ED8;&#x8BA4;&#x4EFB;&#x52A1;">&#x4F7F;&#x7528; gulp.task(&apos;default&apos;, fn) &#x5B9A;&#x4E49;&#x9ED8;&#x8BA4;&#x4EFB;&#x52A1;</h4>
+<pre><code>gulp.task(&apos;default&apos;, [&apos;script&apos;, &apos;auto&apos;]);
+</code></pre><h4 id="&#x5173;&#x4E8E;task&#x4EFB;&#x52A1;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4E92;&#x4F9D;&#x8D56;">&#x5173;&#x4E8E;task(&#x4EFB;&#x52A1;)&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4E92;&#x4F9D;&#x8D56;</h4>
+<pre><code>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6240;&#x4F9D;&#x8D56;&#x7684; task &#x5FC5;&#x987B;&#x5728;&#x8FD9;&#x4E2A; task &#x6267;&#x884C;&#x4E4B;&#x524D;&#x5B8C;&#x6210;
+</code></pre><h6 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;">&#x793A;&#x4F8B;&#x4EE3;&#x7801;</h6>
+<pre><code>var gulp = require(&apos;gulp&apos;);
+var uglify = require(&apos;gulp-uglify&apos;);
+gulp.task(&apos;script&apos;, function() {
+    gulp.src(&apos;js/myapp.js&apos;)
+        .pipe(uglify())
+        .pipe(gulp.dest(&apos;dist/js/myjavascript&apos;))
+});
+gulp.task(&apos;config&apos;,function(){
+        gulp.src(&apos;config.js&apos;)
+        .pipe(uglify())
+        .pipe(gulp.dest(&apos;dist/js&apos;))
+})
+gulp.task(&apos;auto&apos;,function(){
+    gulp.watch(&apos;js/myapp.js&apos;,[&apos;script&apos;])
+})
+gulp.task(&apos;default&apos;,[&apos;script&apos;,&apos;auto&apos;])
+</code></pre><h3 id="gulpfile-&#x7684;-task-&#x4F9D;&#x8D56;&#x6811;">gulpfile &#x7684; task &#x4F9D;&#x8D56;&#x6811;</h3>
+<p><img src="http://i1.piimg.com/567571/2ef2021c1d4ee94e.png" alt=""></p>
+<h4 id="&#x540C;&#x65F6;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x538B;&#x7F29;&#x8FC7;&#x548C;&#x4E00;&#x4E2A;&#x672A;&#x538B;&#x7F29;&#x7248;&#x672C;&#x7684;&#x6587;&#x4EF6;">&#x540C;&#x65F6;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x538B;&#x7F29;&#x8FC7;&#x548C;&#x4E00;&#x4E2A;&#x672A;&#x538B;&#x7F29;&#x7248;&#x672C;&#x7684;&#x6587;&#x4EF6;</h4>
+<pre><code>//gulp-rename &#x7136;&#x540E; pipe &#x5230; dest &#x4E24;&#x6B21;&#x6765;&#x5B9E;&#x73B0;
+var gulp = require(&apos;gulp&apos;);
+var rename=require(&apos;gulp-rename&apos;);
+var DEST=&quot;build/&quot;;
+var uglify = require(&apos;gulp-uglify&apos;);
+gulp.task(&apos;script&apos;, function() {
+    gulp.src(&apos;js/myapp.js&apos;)
+    .pipe(gulp.dest(DEST))
+        .pipe(uglify())
+        .pipe(rename({extname:&apos;.min.js&apos;}))
+        .pipe(gulp.dest(DEST))
+});
+</code></pre><h4 id="&#x4F7F;&#x7528;gulp&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x76D1;&#x6D4B;&#x9875;&#x9762;&#x5237;&#x65B0;">&#x4F7F;&#x7528;Gulp&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x76D1;&#x6D4B;&#x9875;&#x9762;&#x5237;&#x65B0;</h4>
+<h6 id="gulp-connect&#x901A;&#x8FC7;watch&#x4EFB;&#x52A1;&#x548C;livereload&#x8BBE;&#x7F6E;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x7684;&#xFF1A;">Gulp-connect;&#x901A;&#x8FC7;watch&#x4EFB;&#x52A1;&#x548C;livereload&#x8BBE;&#x7F6E;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x7684;&#xFF1A;</h6>
+<pre><code>npm install -g gulp-connect
+</code></pre><pre><code>// &#x5B9E;&#x65F6;&#x66F4;&#x65B0;&#x6D4F;&#x89C8;&#x5668;&#x754C;&#x9762;
+gulp.task(&apos;watch&apos;, function () {  
+    gulp.watch([&apos;views/main.html&apos;], [&apos;html&apos;]);  
+});  
+//&#x4F7F;&#x7528;connect&#x542F;&#x52A8;&#x4E00;&#x4E2A;Web&#x670D;&#x52A1;&#x5668; 
+var
+livereload = require(&apos;gulp-livereload&apos;), 
+connect = require(&apos;gulp-connect&apos;);
+gulp.task(&apos;connect&apos;, function () {  
+    connect.server({  
+        livereload: true  
+    });  
+});  
+gulp.task(&apos;html&apos;, function () {  
+    gulp.src(&apos;views/main.html&apos;)  
+        .pipe(connect.reload());  
+});  
+gulp.task(&apos;auto&apos;,function(){
+    gulp.watch(&apos;js/*/*.js&apos;,[&apos;script&apos;]);
+    gulp.watch([&apos;views/main.html&apos;], [&apos;html&apos;]);
+    gulp.watch(&apos;css/*.css&apos;,[&apos;css&apos;])
+})
+gulp.task(&apos;default&apos;,[&apos;webserver&apos;,&apos;connect&apos;,&apos;auto&apos;,&apos;script&apos;,&apos;css&apos;])
+</code></pre><h4 id="&#x4F7F;&#x7528;gulp&#x5B9E;&#x73B0;&#x6267;&#x884C;gulp&#x547D;&#x4EE4;&#x5373;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x6253;&#x5F00;&#x9875;&#x9762;">&#x4F7F;&#x7528;Gulp&#x5B9E;&#x73B0;&#x6267;&#x884C;gulp&#x547D;&#x4EE4;&#x5373;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x6253;&#x5F00;&#x9875;&#x9762;</h4>
+<pre><code>var webserver = require(&apos;gulp-webserver&apos;),
+//&#x9700;&#x8981;&#x6267;&#x884C;npm install gulp-webserver&#x547D;&#x4EE4;
+gulp.task(&apos;webserver&apos;, function() {
+  gulp.src( &apos;.&apos; ) // &#x670D;&#x52A1;&#x5668;&#x76EE;&#x5F55;&#xFF08;.&#x4EE3;&#x8868;&#x6839;&#x76EE;&#x5F55;&#xFF09;
+  .pipe(webserver({ // &#x8FD0;&#x884C;gulp-webserver
+    livereload: true, // &#x542F;&#x7528;LiveReload
+    open: true // &#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x65F6;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x7F51;&#x9875;
+  }));
+});
+</code></pre><h3 id="js&#x5408;&#x5E76;-gulp-concat">js&#x5408;&#x5E76; gulp-concat</h3>
+<pre><code>concat = require(&apos;gulp-concat&apos;)&#xFF0C;
+.pipe(concat(&apos;main.js&apos;))  
+gulp.task(&apos;script&apos;, function() {
+    // 1. &#x627E;&#x5230;&#x6587;&#x4EF6;
+    gulp.src(&apos;js/*/*.js&apos;)
+    //.pipe(gulp.dest(DEST))
+       // 2. &#x538B;&#x7F29;&#x6587;&#x4EF6;
+        .pipe(uglify())
+        .pipe(rename({extname:&apos;.min.js&apos;}))
+        .pipe(concat(&apos;all.min.js&apos;)) 
+        .pipe(gulp.dest(DEST))
+    // 3. &#x53E6;&#x5B58;&#x538B;&#x7F29;&#x540E;&#x7684;&#x6587;&#x4EF6;    
+});
+</code></pre><h4 id="&#x628A;&#x9700;&#x8981;&#x53D1;&#x5E03;&#x7684;&#x4ECE;&#x591A;&#x5904;&#x6C47;&#x603B;&#x5230;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;distsrc">&#x628A;&#x9700;&#x8981;&#x53D1;&#x5E03;&#x7684;&#x4ECE;&#x591A;&#x5904;&#x6C47;&#x603B;&#x5230;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;dist/src</h4>
+<pre><code>&#x628A;&#x9700;&#x8981;&#x53D1;&#x5E03;&#x7684;&#x4ECE;&#x591A;&#x5904;&#x6C47;&#x603B;&#x5230;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;dist/src
+gulp.task(&quot;copy-to-one-folder&quot;, function(){
+gulp.src([&quot;c:/labs3/TestLab/NodeServer/routes/**/*&quot;], {base: &quot;c:/labs3/TestLab/&quot;})
+.pipe(gulp.dest(&apos;dist/src&apos;));
+
+return gulp.src([&quot;c:/labs3/TestLab/HomeFinder/**/*&quot;], {base:&quot;c:/labs3/TestLab/HomeFinder/&quot;})
+.pipe(gulp.dest(&apos;dist/src&apos;));
+});
+</code></pre><h4 id="gulp-task&#x4E4B;runsequence">gulp task&#x4E4B;runSequence</h4>
+<pre><code>&#x4EFB;&#x52A1;&#x7684;&#x987A;&#x5E8F;&#x7528;runSequence&#x6765;&#x7EC4;&#x7EC7;&#xFF0C;&#x628A;&#x53EF;&#x4EE5;&#x5E76;&#x884C;&#x7684;&#x7684;&#x4EFB;&#x52A1;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x91CC;&#x9762;&#xFF0C; &#x6570;&#x7EC4;&#x4E4B;&#x95F4;&#x662F;&#x4E32;&#x884C;&#x7684; 
+runSequence = require(&apos;run-sequence&apos;)
+runSequence([&apos;clean&apos;], [&apos;copy-to-one-folder&apos;], [&apos;publish&apos;], callback);
+
+(&#x5907;&#x6CE8;&#xFF1A; &#x52A0;&#x5F62;&#x53C2;callback&#x5F7B;&#x5E95;&#x53D8;&#x6210;&#x4E32;&#x884C;)
+</code></pre><h4 id="&#x5982;&#x4F55;&#x81EA;&#x52A8;&#x5316;&#x6539;&#x53D8;&#x9879;&#x76EE;&#x7684;&#x7248;&#x672C;&#x53F7;">&#x5982;&#x4F55;&#x81EA;&#x52A8;&#x5316;&#x6539;&#x53D8;&#x9879;&#x76EE;&#x7684;&#x7248;&#x672C;&#x53F7;</h4>
+<pre><code>gulp.task(&apos;bump-version&apos;, function (){})
+gulp.task(&apos;commit-changes&apos;, function () {})
+gulp.task(&apos;push-changes&apos;, function (cb) {
+  git.push(&apos;origin&apos;, &apos;master&apos;, cb);
+})
+  function getPackageJsonVersion () {
+    // &#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x89E3;&#x6790; json &#x6587;&#x4EF6;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528; require&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A; require &#x4F1A;&#x7F13;&#x5B58;&#x591A;&#x6B21;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x7248;&#x672C;&#x53F7;&#x4E0D;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;&#x6389;
+    return JSON.parse(fs.readFileSync(&apos;./package.json&apos;, &apos;utf8&apos;)).version;
+  };
+});
+gulp.task(&apos;release&apos;, function (callback) {})
+</code></pre><p>&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;<a href="http://wiki.jikexueyuan.com/project/gulp-book/chapter2.html" target="_blank">http://wiki.jikexueyuan.com/project/gulp-book/chapter2.html</a></p>
+<p>&#x200B;         <a href="http://www.gulpjs.com.cn/docs/" target="_blank">http://www.gulpjs.com.cn/docs/</a></p>
+<p><a href="http://www.tuicool.com/articles/nAzquyE" target="_blank">http://www.tuicool.com/articles/nAzquyE</a></p>
+<p><a href="http://www.tuicool.com/articles/IZR3AfV" target="_blank">http://www.tuicool.com/articles/IZR3AfV</a></p>
+<p><a href="http://www.cnblogs.com/GameEngine/p/5229576.html" target="_blank">http://www.cnblogs.com/GameEngine/p/5229576.html</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="git使用.html" class="navigation navigation-prev " aria-label="Previous page: git的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bower的使用.html" class="navigation navigation-next " aria-label="Next page: bower的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"gulp自动化构建项目过程","level":"1.2.4","depth":2,"next":{"title":"bower的使用","level":"1.2.5","depth":2,"path":"chapter1/bower的使用.md","ref":"chapter1/bower的使用.md","articles":[]},"previous":{"title":"git的使用","level":"1.2.3","depth":2,"path":"chapter1/git使用.md","ref":"chapter1/git使用.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/gulp自动化构建项目过程.md","mtime":"2017-06-21T01:31:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-23T10:11:57.688Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
