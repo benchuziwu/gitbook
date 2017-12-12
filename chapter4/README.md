@@ -1,2 +1,0 @@
-# angularjs知识
-
